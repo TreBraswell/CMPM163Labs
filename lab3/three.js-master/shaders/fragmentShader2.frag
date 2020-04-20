@@ -4,9 +4,11 @@ uniform vec3 colorB;
 void main() {
   
 
- gl_FragColor = vec4(mix(colorA, colorB, vUv.z), 1.0);
+ gl_FragColor = vec4(mix(colorA, colorB, vUv.z), 3.0);
 
 }
+
+
 
 
 
