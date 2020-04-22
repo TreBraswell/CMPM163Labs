@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 2: Intro to Three.js Part 1</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+	</head>
+	<body>
+		<script src="../three.js-master/build/three.js"></script>
+		<script>
+			// Our Javascript will go here.
+			var x = 1;
+			var y = 1;
+			var clr =  0x0000ff;
+			var shift = true;
+			var shift2 =true;
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(75, 
+			window.innerWidth/window.innerHeight, 0.1, 1000);
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			var geometry = new THREE.BoxGeometry();
+			var geometry1 = new THREE.BoxGeometry();
+			var geometry2 = new THREE.BoxGeometry();
+			var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
+			var material1 = new THREE.MeshBasicMaterial( {color: 0xff0001} );
+			var material2 = new THREE.MeshBasicMaterial( {color: clr} );
+     		var cube = new THREE.Mesh(geometry, material);
+			scene.add(cube);
+			var cube1 = new THREE.Mesh(geometry1, material1);
+			scene.add(cube1);
+			cube.position.x = -3;
+			cube1.position.x = 0;
+			var cube2 = new THREE.Mesh(geometry2, material2);
+			scene.add(cube2);
+			cube2.position.x = 2;
+			camera.position.z = 5; //this moves the camera towards the viewer
+			var i =1;
+			function animate() {
+			geometry.rotateX(0.01);
+			geometry.rotateY(0.01);
+			geometry1.rotateX(-0.01);
+			geometry1.rotateY(-0.01);
+			if(i%10==0)
+			{
+				shift = !shift;
+			}
+			if(shift)
+			{
+				
+				material2 = new THREE.MeshBasicMaterial( {color: clr} );
+				cube2.position.y++;
+				geometry1.scale(1.111,1.111,1.111);
+			}
+			else
+			{ 
+				cube2.position.y--;
+				geometry1.scale(.9,.9,.9);
+			}
+			i++;
+
+			requestAnimationFrame(animate);
+			renderer.render(scene, camera);
+			}
+			
+			animate();
+
+
+		</script>
+	</body>
+</html>
+
