@@ -1,3 +1,4 @@
+I Chose to do both parts
 Part 1
 I changed the model of the main character
 I changed the material of the car to be a different color
