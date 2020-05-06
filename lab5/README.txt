@@ -1,14 +1,11 @@
-What is the formula given a u value of the uv coordinate (a value between 0 and 1), I get the x value of the pixel to sample from in this 8x8 texture?
- x = (floor((texture size)*u))/texturesize
-What is the formula given a v value of the uv coordinate (a value between 0 and 1), I get the y value of the pixel to sample from in this 8x8 texture?
-convert the y into  a fraction of the highest digit i.e. (0/7) y = floor((abs((texture size)*v)-texturesize)/texturesize)
-What color is sampled from the texture at the uv coordinate (0.375, 0.25)? (sample from the image based on the number your formula gives you i.e. (1, 0) is blue)
-blue
-cubes left to right
-1.The extra cube from part 1 of the tutorial using the concepst i just emulated them to make another cube
-2.Made from the first part of the tutorial
-3.Made from the first part of the tutorial
-4.Created from the instructions from part 2
-5.While looking at the example and the sheet I messed around and found how to make the bottom left. Then I applied that same idea to the other three
+Part 1
+I changed the model of the main character
+I changed the material of the car to be a different color
+I also changed the skybox to be a picture of Nicolas Cage 
 link
-https://drive.google.com/file/d/1c-syutqcC2eawOJHZKKE7w_AFqOdX2nW/view?usp=sharing
+https://drive.google.com/file/d/1hCOaM8lHzWGjEWHnst4JT-R14MjRraPR/view?usp=sharing
+Part 2
+https://drive.google.com/file/d/15zZkS_KnysAYFZPUl0cGMabxIFuO-7DV/view?usp=sharing
+https://drive.google.com/file/d/1LJpnU3fVlTlj9yAD5KJ5ki-fXcKJDRzX/view?usp=sharing
+https://drive.google.com/file/d/1xwLB8sRTwaWFPLt__M3qYV26lhyk9vJS/view?usp=sharing
+I made the final particle by adjusting the geometry and allowing for a pop out feature. I also adjusted the color as well as the positioning.
