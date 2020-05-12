@@ -1,0 +1,6 @@
+point light= behaves like a barren lightbulb, illuminates object in scene based on its position rotation does not affect it equally shines , spotlight= behave like a flashlight are based on rotatation and position lighht in a cone, directional light=like the sun, affect all object in the scene based on its rotation, and area light = only work when baking a light map area light shine in all directions 
+The image of your found object next to an image of your recreation of its material in Unity: I modeled it after the metal sinks in public restrooms.https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLKggCUuMxMSiEQVqQL8S64VXyIs-UM0AOWmefMK0CdtaN_3a_&usqp=CAU model:https://drive.google.com/file/d/1bdKUBv31VgsDn5f8oMKKoN3p1W2OkpX1/view?usp=sharing
+An explanation of how you made the material to look like the object’s: I did this by changing the metallic setting as well as the color.
+A description of the two textured objects you added to your scene (ex: I used one redwood texture and one brick texture.): I used a diamond block texture and a  diamond ore texture from minecraft.
+A description of the skybox you added to your scene (ex: I added a starry night skybox.): I used a bunch of pictures of nicholas cage to create the skybox
+final image:https://drive.google.com/file/d/1Xj8hs6nDjqqz1Lc0uJd_Kw6uqIjFS0M-/view?usp=sharing
